@@ -1,0 +1,11 @@
+nav a
+nav a:hover
+.home-title
+h4
+.book, .join
+.book:hover, .join:hover
+.msg h2
+.msg p
+footer
+footer a
+footer a:hover
