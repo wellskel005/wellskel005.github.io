@@ -251,6 +251,83 @@ nav a:hover {
     box-shadow: 5px 5px 10px #424242;
 }
 
+/* Rivers Page */
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 1600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.idaho-text p {
+    margin: 25px;
+    font-size: 0.75em;
+}
+
+.idaho-text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+.idaho-image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.idaho-image img {
+    width: 600px;
+    align-content: center;
+}
+
+.utah-image img {
+    width: 600px;
+    align-content: center;
+}
+
+.utah-image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+.utah-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.utah-text p {
+    margin: 25px;
+    font-size: 0.75em;
+}
+
+.arizona-text p {
+    margin: 25px;
+    font-size: 0.75em;
+}
+
+.arizona-text {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+
+.arizona-image {
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+
+.arizona-image img {
+    width: 600px;
+    align-content: center;
+}
+
 /* Contact Page */
 body {
   /* Center the form on the page */
