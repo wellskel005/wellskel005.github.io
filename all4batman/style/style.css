@@ -84,3 +84,15 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
+/* ID '#' */
+
+#content {
+  max-width: 1200px;
+}
+
+#banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
