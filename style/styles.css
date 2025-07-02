@@ -24,9 +24,9 @@
   --nav-hover-background-color: #808080;
 }
 
-img {
-    width: 200px;
-
+#content{
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 nav {
@@ -53,7 +53,24 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-div {
-  float: right;
-  width: 500px;
+h1{
+  text-align: center;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+img {
+  width: 200px;
+  grid-row: inherit;
+  grid-column: 2/3;
+  border: 5px solid #036;
+  border-radius: 10px;
+}
+
+p{
+  color:#036;
+  grid-column: 3/4;
 }
