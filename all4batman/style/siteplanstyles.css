@@ -126,19 +126,9 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 .sitemap {
-  display: grid;
-  justify-content: center;
+  float: center;
+}
 
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-.sitemap > div {
-  text-align: center;
-}
 .sm-home {
   grid-area: home;
   background-color: #ccc;
