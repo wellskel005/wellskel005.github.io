@@ -2,26 +2,30 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #fff;
-  --secondary-color: #000;
-  --accent1-color: #808080;
-  --accent2-color: #36454f;
-  --accent3-color: #036; 
+  --primary-color: #335C67;
+  --second-color:  #FFF3B0;
+  --accent1-color: #E09F3E;
+  --accent2-color: #9E2A2B;
+  --accent3-color: #540B0E; 
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Bebas Neue";
   --paragraph-font: Merriweather, serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #036;  /* headlines on a white background */ 
-  --headline-color-on-color: #fff; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #036; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #fff; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #36454F;
-  --nav-link-color: #fff;
-  --nav-background-color: #36454F;
-  --nav-hover-link-color: #036;
-  --nav-hover-background-color: #808080;
+  --headline-color-on-white: #540B0E;  /* headlines on a white background */ 
+  --headline-color-on-color: #fff3b0; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #540B0E; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #fff3b0; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #;
+  --nav-link-color: #fff3b0;
+  --nav-background-color: #540b0e;
+  --nav-hover-link-color: #540B0E;
+  --nav-hover-background-color: #fff3b0;
+}
+
+body{
+  background-color: rgb(234, 233, 232);
 }
 
 #content{
@@ -66,11 +70,11 @@ img {
   width: 200px;
   grid-row: inherit;
   grid-column: 2/3;
-  border: 5px solid #036;
+  border: 5px solid #540B0E;
   border-radius: 10px;
 }
 
 p{
-  color:#036;
+  color:#540B0E;
   grid-column: 3/4;
 }
