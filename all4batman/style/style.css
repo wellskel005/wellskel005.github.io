@@ -26,18 +26,32 @@
 
 /* Main Selectors */
 
+body{
+  background-color:#fcfbfb;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+
 h1,h2,h3,h4,h5,h6{
-    font-family: var(--heading-font);
+  font-family: var(--heading-font);
 }
 
 footer {
-    background-color: var(--nav-background-color);
-    color: var(--paragraph-color-on-color);
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-color: var(--nav-background-color);
+  color: var(--paragraph-color-on-color);
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer a {
@@ -62,37 +76,199 @@ footer .social img {
 /* Nav Bar */
 
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-background-color);
 }
-nav  {
-  list-style-type: none;
-  display: flex;
-}
+
 nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
+    text-align: center;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 35px;
 }
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
+
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 /* ID '#' */
 
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
 #content {
-  max-width: 1200px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 #banner {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
+}
+
+#background2 {
+  height: 725px;
+  grid-column: 1/11;
+  grid-row: 1/5;
+  margin-bottom: 50px;
+}
+
+#brucewayne {
+  width: 50%;
+  box-shadow: 5px 5px 10px #424242;
+}
+
+#background {
+  height: 725px;
+  background-color: var(--second-color);
+  grid-column: 1/11;
+  grid-row: 4/9;
+  margin-bottom: 50px;
+}
+
+#batfam {
+  width: 50%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px #424242;
+}
+
+/* Classes */
+
+.logo {
+  width: 80px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.brucewayne {
+  background-color: var(--primary-color);
+  line-height: 1.5em;
+  padding: 35px;
+  
+  box-shadow: 5px 5px 10px var(--accent1-color);
+}
+
+.brucewayne p {
+  color: var(--text-color-on-color);
+  font-size: .8em;
+  padding-bottom: 15px;
+}
+
+.batfam-msg{
+  background-color: var(--primary-color);
+  line-height: 1.5em;
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px var(--accent1-color);
+}
+.batfam-msg h2 {
+    color: var(--text-color-on-color);
+    font-family: var(--font);
+}
+
+.batfam-msg p {
+    color: var(--text-color-on-color);
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+
+
+/* Movies Page */
+
+
+
+/* Games Page */
+
+
+
+/* Contact Page */
+body {
+  /* Center the form on the page */
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin-top: 25px;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, text areas have a monospace font */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Set the outline width and style */
+  outline-style: solid;
+  /* To give a little highlight on active elements */
+  outline-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+
+#feedback {
+    background-color: #fcfbfb;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+
+.moveDown {
+    margin-top: 3em;
 }
