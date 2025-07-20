@@ -109,7 +109,7 @@ nav a:hover {
 }
 
 #background3 {
-  background: #036;
+  background: #000;
 }
 
 #banner {
@@ -122,13 +122,12 @@ nav a:hover {
 #background2 {
   height: 725px;
   grid-column: 1/11;
-  grid-row: 1/5;
-  background: #036;
+  grid-row: 1/5; 
 }
 
 #background {
   height: 725px;
-  background-color: var(--second-color);
+  background-color: var(--accent2-color);
   grid-column: 1/11;
   grid-row: 5/10;
 }
@@ -152,7 +151,7 @@ nav a:hover {
 }
 
 .aboutbatman {
-  background-color: var(--primary-color);
+  background-color: #fcfbfb;
   line-height: 1.5em;
   padding: 35px;
   grid-column: 3/9;
@@ -172,7 +171,7 @@ nav a:hover {
 }
 
 .batfam-msg{
-  background-color: var(--primary-color);
+  background-color: #fcfbfb;
   line-height: 1.5em;
   padding: 30px;
   grid-column: 6/9;
@@ -470,4 +469,13 @@ button {
 
 .moveDown {
     margin-top: 3em;
+}
+
+#batfam2{
+  margin: 25px;
+  border-radius: 100px;
+}
+
+#contact-background{
+  background:#fcfbfb;
 }
